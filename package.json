@@ -1,0 +1,22 @@
+{
+  "name": "bash",
+  "version": "1.0.0",
+  "description": "node shell emulator",
+  "main": "bash.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seth-way/node-shell.git"
+  },
+  "author": "seth and dan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seth-way/node-shell/issues"
+  },
+  "homepage": "https://github.com/seth-way/node-shell#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
+}
