@@ -2,6 +2,7 @@ const pwd = require('./pwd');
 const ls = require('./ls');
 const cat = require('./cat');
 const curl = require('./curl');
+const head = require('./head');
 
 const done = (output) => {
     process.stdout.write(output);
@@ -30,4 +31,9 @@ process.stdin.on('data', (data) => {
         const address = cmd.split(' ')[1];
         curl(address, done);
     }
+    if(cmd.split(' ')[0] === 'head'){
+        const filename = cmd.split(' ')[1];
+        head(filename, done);
+    }
+    
 });
